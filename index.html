@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fast Times Tables</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script defer src="functions.js";></script>
+    <script defer src="script.js";></script>
+</head>
+<body>
+<div class="pageContainer">
+
+    <header>
+        <h1>Fast Times Tables</h1>
+    </header>
+
+    <article>
+        <div class="instructions">click twelve numbers</div>
+        <div class="errorMessage"></div>
+    </article>
+    <main>
+
+        <div class="questionSelector">
+            <div class="timesTableGrid">
+
+            </div>
+            <div class="button random">random</div>
+            <div class="button clear">clear</div>
+            <div class="button done">done</div>
+        </div>
+
+        <div class="playGame">
+            <div class="playGameQuestionBar">
+                <div class="question">=</div>
+                <div class="answerDisplay"></div>
+
+                <div class="button back">&lt;-</div>
+                <div class="timer"><div class="timerSecs">60</div>
+                    <div class="timerSecs">sec</div>
+                </div>
+            </div>
+            <div class="controls">
+                <div class="controlLine">
+                    <div class="numbers" data-id="7">7</div>
+                    <div class="numbers" data-id="8">8</div>
+                    <div class="numbers" data-id="9">9</div>
+                </div>
+                <div class="controlLine">
+                    <div class="numbers" data-id="4">4</div>
+                    <div class="numbers" data-id="5">5</div>
+                    <div class="numbers" data-id="6">6</div>
+                </div>
+                <div class="controlLine">
+                    <div class="numbers" data-id="1">1</div>
+                    <div class="numbers" data-id="2">2</div>
+                    <div class="numbers" data-id="3">3</div>
+                </div>
+                <div class="controlLine">
+                    <div class="numbers" data-id="0">0</div>
+                    <div class="controlButton backspace">back</div>
+                </div>
+
+                <div class="controlButton enter">enter</div>
+            </div>
+            <div class="setDisplay">
+                <div class="scoringTitle">set</div>
+                <div class="set">1</div>
+                <div class="set">2</div>
+                <div class="set">3</div>
+                <div class="set">4</div>
+                <div class="set">5</div>
+            </div>
+            <div class="scoreDisplay">
+                <div class="scoringTitle">score</div>
+                <div class="scoreRow">
+                    <div class="score">6</div>
+                    <div class="score">12</div>
+                </div>
+                <div class="scoreRow">
+                    <div class="score">5</div>
+                    <div class="score">11</div>
+                </div>
+                <div class="scoreRow">
+                    <div class="score">4</div>
+                    <div class="score">10</div>
+                </div>
+                <div class="scoreRow">
+                    <div class="score">3</div>
+                    <div class="score">9</div>
+                </div>
+                <div class="scoreRow">
+                    <div class="score">2</div>
+                    <div class="score">8</div>
+                </div>
+                <div class="scoreRow">
+                    <div class="score">1</div>
+                    <div class="score">7</div>
+                </div>
+                <div class="score">0</div>
+            </div>
+        </div>
+
+        <div class="gameOver">
+            <h1>well Done</h1>
+            <div>you got  <span class="setScore"></span>, and <span class="pointsScore"></span></div>
+            <div>that is a score of <span class="totalScore"></span> or <span class="percentScore"></span></div>
+            <a class="button newGame" href="index.html">new Game</a>
+        </div>
+
+    </main>
+</div>
+</body>
+</html>

@@ -1,0 +1,284 @@
+@font-face {
+    font-family: ComingSoon;
+    src: url(./fonts/ComingSoon-Regular.ttf);
+}
+
+@font-face {
+    font-family: Pangolin;
+    src: url(./fonts/Pangolin-Regular.ttf);
+}
+
+@font-face {
+    font-family: GloriaHallelujah;
+    src: url(./fonts/GloriaHallelujah-Regular.ttf);
+}
+
+@font-face {
+    font-family: IndieFlower;
+    src: url(./fonts/IndieFlower-Regular.ttf);
+}
+
+@font-face {
+    font-family: Itim;
+    src: url(./fonts/Itim-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'ComingSoon', 'sans-serif';
+}
+
+.pageContainer {
+    width: 700px;
+    margin: 0 auto;
+    background-color: orange;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+article {
+    margin: 15px auto;
+    background-color: red;
+    border-radius: 5px;
+    padding: 10px;
+    overflow: auto;
+    font-family: 'IndieFlower', 'sans-serif';
+    color: lawngreen;
+}
+
+article div {
+    float: left;
+}
+
+.errorMessage {
+    color: white;
+    padding: 0 0 0 20px;
+}
+
+main {
+    position: relative;
+}
+
+.questionSelector, .playGame, .gameOver {
+    width: 700px;
+    position: absolute;
+    right: -20px;
+    overflow: auto;
+    background-color: orange;
+    padding: 20px;
+    overflow: auto;
+}
+
+.playGame {
+    display: none;
+    overflow: auto;
+}
+
+.gameOver {
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 5px;
+    width: 680px;
+    right: -10px;
+    display: none;
+}
+
+.timesTableGrid {
+    width: 520px;
+    overflow: auto;
+    float: left;
+}
+
+.gridHeader, .gridInterior {
+    float: left;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.gridHeader {
+    background-color: blue;
+    color: white;
+    font-family: 'GloriaHallelujah', 'sans-serif';
+}
+
+.gridInterior {
+    background-color: yellow;
+    font-family: 'Itim', 'sans-serif';
+}
+
+.gridInterior:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.button {
+    padding: 5px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    float: right;
+    width: 100px;
+    background-color: yellow;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: purple;
+    color: white;
+}
+
+.playGameQuestionBar {
+    overflow: auto;
+    width: 100%;
+}
+
+.playGameQuestionBar div {
+    float: left;
+    margin: 20px 10px;
+}
+
+.playGameQuestionBar div.question {
+    width: 70px;
+    margin: 25px 10px;
+}
+
+.playGameQuestionBar div.answerDisplay {
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.playGameQuestionBar div.timer {
+    background-color: lawngreen;
+    border-radius: 50%;
+    width: 100px;
+    padding: 20px;
+    margin: 10px;
+    overflow: auto
+}
+
+.playGameQuestionBar div.timer div.timerSecs {
+    float: left;
+    width: 25px;
+    padding: 0 3px;
+    margin: 0;
+}
+
+.playGameQuestionBar div.back, .playGameQuestionBar div.timer {
+    float: right;
+}
+
+.controls, .setDisplay, .scoreDisplay {
+    overflow: auto;
+    float: left;
+}
+
+.controls {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: auto;
+    width: -moz-fit-content;
+    width: fit-content;
+    background-color: lawngreen;
+}
+
+.controlLine {
+    overflow: auto;
+}
+
+.numbers {
+    float: left;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 20px 5px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: yellow;
+}
+
+.numbers:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.controlButton {
+    padding: 20px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    float: left;
+    height:60px;
+    background-color: blue;
+    color: white;
+    margin: 5px;
+    text-align: center;
+}
+
+.controlButton:hover {
+    cursor: pointer;
+    background-color: purple;
+}
+
+.controlButton.backspace {
+    width: 130px;
+}
+
+.controlButton.enter {
+    width: 200px;
+}
+
+.setDisplay {
+    padding: 0 20px;
+    margin: 0 40px;
+}
+
+.scoringTitle {
+    padding: 5px 20px;
+    border: 1px solid black;
+    margin: 5px;
+    text-align: center;
+}
+
+.set, .score {
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    margin: 5px;
+    text-align: center;
+}
+
+.scoreRow {
+    overflow: auto;
+}
+
+.score {
+    float: left;
+}
+
+.gameOver {
+    height: 460px;
+}
+
+.gameOver div {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.newGame {
+    text-decoration: none;
+    float: none;
+    display: block;
+    margin: 50px auto;
+}
