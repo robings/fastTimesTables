@@ -81,7 +81,7 @@ main {
 }
 
 .gameOver {
-    background-color: rgba(255,255,255,0.8);
+    background-color: #0099FF;
     border-radius: 5px;
     width: 680px;
     right: -10px;
