@@ -81,11 +81,10 @@ main {
 }
 
 .gameOver {
-    background-color: #0099FF;
+    background-color: rgba(0, 0 , 0, 0);
     border-radius: 5px;
-    width: 680px;
-    right: -10px;
     display: none;
+    height: 460px;
 }
 
 .timesTableGrid {
@@ -266,8 +265,12 @@ main {
     float: left;
 }
 
-.gameOver {
-    height: 460px;
+.gameOver div.gameOverMessage {
+    background-color: #0099FF;
+    border-radius: 5px;
+    width: 400px;
+    padding: 25px;
+    margin-top: 50px;
 }
 
 .gameOver div {
