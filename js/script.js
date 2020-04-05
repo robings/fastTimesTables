@@ -9,6 +9,7 @@ let timerVar
 
 createTimesTableGrid(startTable)
 addEventListenersToGridElements()
+addEventListenersToGridAxisElements()
 document.querySelector('.done').addEventListener('click', startGame)
 document.querySelector('.random').addEventListener('click', pickRandomQuestions)
 document.querySelector('.clear').addEventListener('click', clearGrid)

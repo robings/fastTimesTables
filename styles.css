@@ -38,8 +38,21 @@ html {
     padding: 20px;
 }
 
-h1 {
-    text-align: center;
+header {
+    overflow: auto;
+}
+
+header img {
+    width: 64px;
+    float:left;
+    border-radius: 5px;
+    border: 2px solid purple;
+}
+
+header h1 {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 20px auto;
 }
 
 article {
@@ -106,6 +119,11 @@ main {
     background-color: blue;
     color: white;
     font-family: 'GloriaHallelujah', 'sans-serif';
+}
+
+.gridXAxis:hover, .gridYAxis:hover {
+    cursor:pointer;
+    background-color: red;
 }
 
 .gridInterior {
@@ -266,7 +284,7 @@ main {
 }
 
 .gameOver div.gameOverMessage {
-    background-color: #0099FF;
+    background-color: cornflowerblue;
     background-image: url('images/confused.jpg');
     background-position: top right;
     background-repeat: no-repeat;
