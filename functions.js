@@ -133,6 +133,7 @@ function startGame() {
         positionScoreBox()
         positionSetBox()
         getQuestion()
+        document.querySelector('.timer').style.backgroundColor = 'lawngreen'
         document.querySelector('.timerSecs').textContent='60'
         setTimer(60)
     }
