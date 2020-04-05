@@ -27,9 +27,15 @@ function addEventListenersToGridAxisElements() {
         if (index !=0) {
         interiorGridAxisElement.addEventListener('click', (e)=>{
             document.querySelector('.errorMessage').textContent = ''
-           console.log (`You clicked ${e.target.dataset.no}`)
-
-           })
+            let noSelected = e.target.dataset.no
+            let axisSelected
+            if ((e.target.className.indexOf('XAxis')) != -1) {
+                axisSelected = 'X'
+            } else if ((e.target.className.indexOf('YAxis')) != -1) {
+                axisSelected = 'Y'
+            }
+            selectWholeLine(noSelected, axisSelected)
+            })
         }
     })
 }

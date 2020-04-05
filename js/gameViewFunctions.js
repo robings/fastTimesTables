@@ -17,6 +17,39 @@ function createTimesTableGrid(startingTable) {
     document.querySelector('.timesTableGrid').innerHTML=htmlBuild
 }
 
+function selectWholeLine(noSelected, axisSelected) {
+    clearGrid()
+    console.log (noSelected, axisSelected)
+    let interiorGridElements = document.querySelectorAll('.gridInterior')
+
+    if (axisSelected === 'X') {
+        let startPos
+        if (noSelected%12 != 0) {
+            startPos = noSelected%12 -1
+        } else {
+            startPos = (noSelected%12 -1) + 12
+        }
+        
+        for (let i=0; i<12; i++) {
+            let arrayPos = (startPos + (i*12))
+            interiorGridElements[arrayPos].style.backgroundColor='purple'
+            let xValue = interiorGridElements[arrayPos].dataset.x
+            let yValue = interiorGridElements[arrayPos].dataset.y
+            questionsArray.push({x: xValue, y: yValue})
+        }
+    }
+
+    if (axisSelected === 'Y') {
+        for (let i=0; i<12; i++) {
+            let arrayPos = ((noSelected*12-12) + i)
+            interiorGridElements[arrayPos].style.backgroundColor='purple'
+            let xValue = interiorGridElements[arrayPos].dataset.x
+            let yValue = interiorGridElements[arrayPos].dataset.y
+            questionsArray.push({x: xValue, y: yValue})
+        }
+    }
+}
+
 function clearGrid() {
     if (questionsArray.length > 0) {
         wipeArray(questionsArray)
