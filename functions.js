@@ -133,6 +133,7 @@ function startGame() {
         positionScoreBox()
         positionSetBox()
         getQuestion()
+        document.querySelector('.timer').style.backgroundColor = 'lawngreen'
         document.querySelector('.timerSecs').textContent='60'
         setTimer(60)
     }
@@ -175,7 +176,7 @@ function doEnter() {
             score+=1
         }
 
-        if (score%12 == 0) {
+        if (score%12 == 0  && !noOfQuestions <12) {
             sets++
             positionSetBox()
         }

@@ -81,11 +81,10 @@ main {
 }
 
 .gameOver {
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(0, 0 , 0, 0);
     border-radius: 5px;
-    width: 680px;
-    right: -10px;
     display: none;
+    height: 460px;
 }
 
 .timesTableGrid {
@@ -266,19 +265,29 @@ main {
     float: left;
 }
 
-.gameOver {
-    height: 460px;
+.gameOver div.gameOverMessage {
+    background-color: #0099FF;
+    background-image: url('images/confused.jpg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    width: 400px;
+    padding: 25px;
+    margin: 0px auto 50px auto;
 }
 
 .gameOver div {
     width: -moz-fit-content;
     width: fit-content;
-    margin: 0 auto;
+}
+.gameOver h1 {
+    text-align: left;
+    margin-bottom: 45px;
 }
 
 .newGame {
     text-decoration: none;
     float: none;
     display: block;
-    margin: 50px auto;
+    margin: 30px 0;
 }
