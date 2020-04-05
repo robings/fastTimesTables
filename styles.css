@@ -38,8 +38,21 @@ html {
     padding: 20px;
 }
 
+header {
+    overflow: auto;
+}
+
+header img {
+    width: 64px;
+    float:left;
+    border-radius: 5px;
+    border: 2px solid purple;
+}
+
 h1 {
-    text-align: center;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 20px auto;
 }
 
 article {
