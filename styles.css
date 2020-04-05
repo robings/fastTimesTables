@@ -108,6 +108,11 @@ main {
     font-family: 'GloriaHallelujah', 'sans-serif';
 }
 
+.gridXAxis:hover, .gridYAxis:hover {
+    cursor:pointer;
+    background-color: red;
+}
+
 .gridInterior {
     background-color: yellow;
     font-family: 'Itim', 'sans-serif';
@@ -266,7 +271,7 @@ main {
 }
 
 .gameOver div.gameOverMessage {
-    background-color: #0099FF;
+    background-color: cornflowerblue;
     background-image: url('images/confused.jpg');
     background-position: top right;
     background-repeat: no-repeat;

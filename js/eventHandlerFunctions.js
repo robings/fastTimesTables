@@ -21,6 +21,19 @@ function addEventListenersToGridElements() {
     })
 }
 
+function addEventListenersToGridAxisElements() {
+    let interiorGridAxisElements = document.querySelectorAll('.gridHeader')
+    interiorGridAxisElements.forEach ((interiorGridAxisElement, index) => {
+        if (index !=0) {
+        interiorGridAxisElement.addEventListener('click', (e)=>{
+            document.querySelector('.errorMessage').textContent = ''
+           console.log (`You clicked ${e.target.dataset.no}`)
+
+           })
+        }
+    })
+}
+
 function addEventListenersToNumberControls() {
     let numberControls = document.querySelectorAll('.numbers')
     numberControls.forEach(numberControl => {

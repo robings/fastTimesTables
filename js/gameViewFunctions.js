@@ -4,11 +4,11 @@ function createTimesTableGrid(startingTable) {
 
     for (let i=startingTable; i<endingTable+1; i++) {
 
-        htmlBuild+=`<div class="gridHeader">${i}</div>`
+        htmlBuild+=`<div class="gridHeader gridXAxis" data-no="${i}">${i}</div>`
     }
 
     for (let i=startingTable-startingTable+1; i<endingTable-startingTable+2; i++) {
-        htmlBuild+=`<div class="gridHeader">${i}</div>`
+        htmlBuild+=`<div class="gridHeader gridYAxis" data-no="${i}">${i}</div>`
 
         for (let j=startingTable; j<endingTable+1; j++) {
             htmlBuild+=`<div class="gridInterior" data-x="${j}" data-y="${i}">${i*j}</div>`
