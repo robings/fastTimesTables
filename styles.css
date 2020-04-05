@@ -49,7 +49,7 @@ header img {
     border: 2px solid purple;
 }
 
-h1 {
+header h1 {
     width: -moz-fit-content;
     width: fit-content;
     margin: 20px auto;
