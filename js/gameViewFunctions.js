@@ -19,7 +19,6 @@ function createTimesTableGrid(startingTable) {
 
 function selectWholeLine(noSelected, axisSelected) {
     clearGrid()
-    console.log (noSelected, axisSelected)
     let interiorGridElements = document.querySelectorAll('.gridInterior')
 
     if (axisSelected === 'X') {
@@ -29,7 +28,7 @@ function selectWholeLine(noSelected, axisSelected) {
         } else {
             startPos = (noSelected%12 -1) + 12
         }
-        
+
         for (let i=0; i<12; i++) {
             let arrayPos = (startPos + (i*12))
             interiorGridElements[arrayPos].style.backgroundColor='purple'

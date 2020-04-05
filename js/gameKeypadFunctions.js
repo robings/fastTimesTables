@@ -21,10 +21,6 @@ function doEnter() {
         }
 
         positionScoreBox()
-
-        console.log('Answer: ' + currentAnswer)
-        console.log('Score: ' + score + '\\' + noOfQuestions)
-        console.log('Sets: ' + sets)
         getQuestion()
     } else {
         document.querySelector('.errorMessage').textContent = 'please put in an answer'
