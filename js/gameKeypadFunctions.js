@@ -15,7 +15,7 @@ function doEnter() {
             score+=1
         }
 
-        if (score%12 == 0  && !noOfQuestions <12) {
+        if (score%12 == 0  && score !=0) {
             sets++
             positionSetBox()
         }
