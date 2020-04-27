@@ -54,6 +54,7 @@ function addEventListenersToNumberControls() {
 }
 
 function logKey(e) {
+    
     let re = /^[\d]$/
 
     let keyChar = String(e.key.replace('key',''))
@@ -65,6 +66,7 @@ function logKey(e) {
         doEnter()
     }
     if (keyChar === 'Backspace') {
+        e.preventDefault()
         doBackspace()
     }
 }
