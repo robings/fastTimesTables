@@ -208,6 +208,10 @@ main {
     width: -moz-fit-content;
     width: fit-content;
     background-color: lawngreen;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .controlLine {
@@ -224,6 +228,11 @@ main {
     margin: 5px;
     border-radius: 5px;
     background-color: yellow;
+}
+
+.numbers:active {
+    border-color: red;
+    background-color: gold;
 }
 
 .numbers:hover {
@@ -246,6 +255,11 @@ main {
 .controlButton:hover {
     cursor: pointer;
     background-color: purple;
+}
+
+.controlButton:active {
+    color: black;
+    background-color: blueviolet;
 }
 
 .controlButton.backspace {

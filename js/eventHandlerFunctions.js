@@ -52,3 +52,21 @@ function addEventListenersToNumberControls() {
         })
     })
 }
+
+function logKey(e) {
+    
+    let re = /^[\d]$/
+
+    let keyChar = String(e.key.replace('key',''))
+    console.log (keyChar)
+    if (re.test(keyChar)) {
+        document.querySelector('.answerDisplay').textContent += keyChar
+    }
+    if (keyChar === 'Enter') {
+        doEnter()
+    }
+    if (keyChar === 'Backspace') {
+        e.preventDefault()
+        doBackspace()
+    }
+}

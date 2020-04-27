@@ -72,6 +72,7 @@ function startGame() {
         document.querySelector('.instructions').textContent = 'answer as many questions as you can in one minute'
         positionScoreBox()
         document.querySelector('.back').addEventListener('click', backToQuestionSelector)
+        document.querySelector('body').addEventListener('keydown', logKey)
         addEventListenersToNumberControls()
         document.querySelector('.backspace').addEventListener('click', doBackspace)
         document.querySelector('.enter').addEventListener('click', doEnter)
@@ -147,9 +148,15 @@ function setTimer(countdown) {
 }
 
 function gameOver() {
+    document.querySelector('body').removeEventListener('keydown', logKey)
     document.querySelector('.setScore').textContent = `${sets} set${sets==1 ? '' : 's'}`
     document.querySelector('.pointsScore').textContent = `${score%12} point${score%12==1 ? '' : 's'}`
     document.querySelector('.totalScore').textContent = `${score} / ${(noOfQuestions-1)}`
-    document.querySelector('.percentScore').textContent = `${Math.round((score/(noOfQuestions-1))*100)} %`
+    if (score != 0) {
+        document.querySelector('.percentScore').textContent = `${Math.round((score/(noOfQuestions-1))*100)} %`
+    } else if (score === 0) {
+        document.querySelector('.percentScore').textContent = `0 %`
+        document.querySelector('.gameOverMessage h1').textContent = 'Better luck next time!'
+    }
     document.querySelector('.gameOver').style.display='block'
 }
