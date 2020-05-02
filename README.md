@@ -11,5 +11,5 @@
 - Press the `done` button to begin play.
 - A new screen appears. You have 60 seconds to answer as many questions as possible.
 - On a PC, you can use the keyboard or click the keypad buttons on screen to enter answers. On a touch screen device, tap the buttons on the on screen keypad to enter your answers.
-- If you answer 12 questions correctly, you get a set. Answer another 12 questions to get another set.
+- If you answer 12 questions correctly, you get a set. Try to get as many sets as you can.
 - After 60 seconds, the game ends, and you will see your results.
